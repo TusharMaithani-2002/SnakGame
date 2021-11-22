@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+.full-screen-container{
+    background-image: url("img/bg.jpg");
+    height:100vh;
+    width:100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-container {
+    background-color:hsla(201,100%,6%,0.6) ;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 50px 30px;
+   min-width: 400px;
+   max-width: 600px;
+   /* height: 30vh; */
+}
+.login-title {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:30vw;
+}
+.input-group label{
+    color : white;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.input-group input {
+
+    /* getting rid of all the default input style */
+    background-color: hsla(201,100%,91%,0.3);
+    font-size: 1.2em;
+    padding: .1em ,25em;
+    margin-bottom: 20px ;
+    border: 1px solid hsla(201,100%,6%);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-weight: lighter;   
+}
+.input-group input:focus {
+    border: 1px solid hsl(201,100%,50%);
+}
+
+.btn {
+    background-color: hsla(201,100%,50%,0.1);
+    padding:5px 30px;
+    /* width: 100%; */
+    border: 1px solid hsl(201,100%,50%);
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5em;
+    color : white;
+    font-weight: lighter;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsla(201,100%,50%,0.3);
+}
+.btn:focus {
+    background-color: hsla(201,100%,50%,0.5);
+}
+#errorMessage {
+    background-color:palevioletred;
+}
